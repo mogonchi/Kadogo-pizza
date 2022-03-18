@@ -26,3 +26,16 @@
     border-radius: 4px;
 
 }
+#welcome{
+    text-align: center;
+    text-indent: 3rem;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+body{
+    background-image: url(../images/backgrnd.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    content: '\F0C8F';
+}
