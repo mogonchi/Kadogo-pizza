@@ -20,7 +20,43 @@ $(document).ready(function(){
         let pizzaCrust = $("#crust option: selected").val();
         let pizzaTopping = $("#topping option: selected"). val();
         $.forEach(&("input[name = 'toppings']:checked"), function(){
-            pizzaTopping.push($(this).val();)
+            pizzaTopping.push($(this).val());
         })
-    })
+    });
+    // console.log(pizzatopping.join(""))
+    switch(pizzaSize){
+        case "0":
+            price = 0;
+            break;
+            case "Large":
+                price = 2000;
+                console.log( "The price is  " + price);
+            break;
+            case "Medium":
+                price = 1500;
+                console.log( "The price is  " + price);
+            break;
+            case "Small":
+                price = 600;
+                console.log( "The price is  " + price);
+            default:
+                console.log("error")
+
+
+    }
+    // switch(pizzaCrust) {
+    //     case "0":
+    //         crust_price = 0;
+    //         break;
+    //         case "Cripsy":
+    //             crust_price = 150;
+    //         break
+    //         case "Stuffed":
+    //             crust_price = 180;
+    //         break
+    //         case "Glutten-free":
+    //             crust_price = 200;
+    //         break
+        
+    // }
 })
