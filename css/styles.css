@@ -31,6 +31,7 @@
     text-indent: 3rem;
     padding-top: 50px;
     margin-top: 50px;
+    color: black;
 }
 
 body{
@@ -45,8 +46,19 @@ body{
     padding-top: 20px;
     margin-top: 20px;
     background-color: transparent;
+    color: black;
 }
 #images p{
    background-color: black;
    color: white;
+}
+.variety{
+    margin-top: 3rem;
+    text-align: center;
+    color: black;
+}
+.menu{
+    margin-top: 3rem;
+    text-align: center;
+    color: black;
 }
