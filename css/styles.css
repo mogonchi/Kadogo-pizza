@@ -39,6 +39,7 @@ body{
     background-attachment: fixed;
     background-position: center;
     content: '\F0C8F';
+    color: black;
 }
 /* About us */
 #about-us{
@@ -61,4 +62,11 @@ body{
     margin-top: 3rem;
     text-align: center;
     color: black;
+}
+/* contact us */
+.contact-us{
+    text-align: center;
+}
+.footer{
+    text-align: center;
 }
