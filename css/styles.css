@@ -1,10 +1,13 @@
 
-
+/* styling class container-nav */
 .profile{
     color: rgb(82, 68, 8);
+    
 }
 .container-nav{
     background-color: black;
+    height: 80px;
+    
 }
 
 #nav-bar{
@@ -18,3 +21,8 @@
     margin-left: 3rem;
   
 } 
+.nav a:hover{
+    background-color: green;
+    border-radius: 4px;
+
+}
