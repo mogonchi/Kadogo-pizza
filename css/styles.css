@@ -45,3 +45,7 @@ body{
     padding-top: 20px;
     margin-top: 20px;
 }
+#images p{
+   background-color: black;
+   color: white;
+}
