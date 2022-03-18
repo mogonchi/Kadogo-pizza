@@ -192,30 +192,42 @@
 
                     <div class="col-sm-6">
                         <h3>Your order is:</h3>
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Size</th>
-                                <th>Crust</th>
-                                <th>Topping</th>
-                                <th>Total</th>
-                            
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td id="pizzaname"></td>
-                                <td id="pizzasize"></td>
-                                <td id="pizzacrust"></td>
-                                <td pizzatopping></td>
-                                <td id="totals"></td>
-
-                            </tr>
-                        </tbody>
+                        <table class="pizzatable">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Size</th>
+                                    <th>Crust</th>
+                                    <th>Topping</th>
+                                    <th>Total</th>
+                                
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="pizzaname"></td>
+                                    <td id="pizzasize"></td>
+                                    <td id="pizzacrust"></td>
+                                    <td id="pizzatopping"></td>
+                                    <td id="totals"></td>
+    
+                                </tr>
+                            </tbody>
+                        </table>
                         <button class="btn">Add pizza</button>
                         <button class="btn" id="checkout">Checkout</button>
                         <button class="btn">Home delivery</button>
                         <button></button>
+                    </div>
+                    <div class="delivery">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" id="name" class="form-control" placeholder="Name">
+                                <input type="number" id="phone" class="form-control" placeholder="Phone number">
+                                <input type="text" id="location" class="form-control" placeholder="Location for dlivery">
+                                <button class="btn" id="final-order">Place order</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
