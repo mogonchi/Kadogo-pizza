@@ -63,15 +63,31 @@ body{
     text-align: center;
     color: black;
 }
+/* order */
+
+.order{
+    text-align: center;
+}
+#order-here{
+    text-align: center;
+    /* margin: 20px;
+    padding: 15px; */
+}
 /* contact us */
 .contact-us{
     text-align: center;
     margin-top: 15px;
     background-color: rgb(249, 252, 252);
     opacity: initial;
+    margin: 50px;
+    padding: 50px;
 }
 .footer{
     text-align: center;
     margin-top: 20px;
     background-color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
