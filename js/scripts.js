@@ -19,9 +19,9 @@ $(document).ready(function(){
         let pizzaSize = $("#size option:selected").val();
         let pizzaCrust = $("#crust option: selected").val();
         let pizzaTopping = $("#topping option: selected"). val();
-        $.forEach(&("input[name = 'toppings']:checked"), function(){
-            pizzaTopping.push($(this).val());
-        })
+        // $.forEach( &("input[name = 'toppings']:checked"), function(){
+        //     pizzaTopping.push($(this).val());
+        // })
     });
     // console.log(pizzatopping.join(""))
     switch(pizzaSize){
@@ -39,24 +39,66 @@ $(document).ready(function(){
             case "Small":
                 price = 600;
                 console.log( "The price is  " + price);
-            default:
+            break;
+                default:
                 console.log("error")
 
 
     }
-    // switch(pizzaCrust) {
-    //     case "0":
-    //         crust_price = 0;
-    //         break;
-    //         case "Cripsy":
-    //             crust_price = 150;
-    //         break
-    //         case "Stuffed":
-    //             crust_price = 180;
-    //         break
-    //         case "Glutten-free":
-    //             crust_price = 200;
-    //         break
+    switch(pizzaCrust) {
+        case "0":
+            crust_price = 0;
+            break;
+            case "Cripsy":
+                crust_price = 150;
+            break;
+            case "Stuffed":
+                crust_price = 180;
+            break;
+            case "Glutten-free":
+                crust_price = 200;
+            break;
+            default:
+                console.log("There is no price")
         
-    // }
+    }
+    switch (pizzaTopping) {
+        case "0":
+            topping_price = 0;
+            break;
+            case "Tomatoes":
+                topping_price = 50;
+                break;
+                case "Black olives":
+                topping_price = 50;
+                break;
+                case "Mushroom":
+                topping_price = 50;
+                break;
+                case "Fresh garlic":
+                topping_price = 50;
+                break;
+                case "Onions":
+                topping_price = 50;
+                break;
+                case "Green pepper":
+                topping_price = 50;
+                break;
+                default:
+                    console.log("There is no price")
+
+                
+    }
+     if((pizzaSize == " ") && (pizzaCrust == " ")){
+         console.log("Nothing selected");
+         $("button.proceed").show();
+         $("#your-order").hide();
+         alert("Please select pizza size and crust");
+     }
+       else{
+           $("button.proceed").hide();
+           $("#your-order").slideDown(1000);
+       }
+       
+
 })
