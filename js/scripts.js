@@ -99,6 +99,15 @@ $(document).ready(function(){
            $("button.proceed").hide();
            $("#your-order").slideDown(1000);
        }
-       
+       total = price + crust_price + topping_price;
+       console.log(total);
+       let checkoutTotal = 0;
+       checkoutTotal = checkoutTotal + total;
+
+       $("#pizzaname").html($(".name option:selected").val());
+       $("#pizzasize").html($("#size option:selected").val());
+       $("#pizzacrust").html($("#crust option:selected").val());
+       $("#pizzatopping").html($("#topping option:selected").val());
+       $("#totals").html(total);
 
 })
