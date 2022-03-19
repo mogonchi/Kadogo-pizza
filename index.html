@@ -152,7 +152,7 @@
                 <p>Order your pizza here and we will deliver it into your doorstep</p>
                 <div class="row">
                     <div class="col-md-5">
-                        <form action="">
+                        <form action="" id="form">
                             <label for="select">Select your flavor</label>
                             <select name="" id="flavor">
                                 <option value="Veggi pizza">Veggi pizza</option>
@@ -174,17 +174,34 @@
                                 <option value="Stuffed">Stuffed -- sh.180</option>
                                 <option value="Gluten-free">Gluten-free -- sh.200</option>
                             </select>
-                            <label for="toppings">Select your favorite toppings</label>
-                            <select name="" id="topping">
-                                <option value="Tomatoes">Tomatoes -- sh.50</option>
-                                <option value="Black olives">Black olives -- sh.50</option>
-                                <option value="Mushroom">Mushroom -- sh.50</option>
-                                <option value="Fresh garlic">Fresh garlic -- sh.50</option>
-                                <option value="Onions">Onions -- sh.50</option>
-                                 
-                                <option value="Green pepper">Green pepper -- sh.50</option>
-                                
-                            </select>
+                            <label for="toppings">Select your favorite toppings at sh.80 each</label>
+                            
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="Garlic" value="Garlic" name="toppings">
+                                <label class="custom-control-label" for="Garlic">Fresh garlic</label>
+                              </div> 
+                              <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="Black" value="Black" name="toppings">
+                                <label class="custom-control-label" for="Black-olives">Black olives</label>
+                              </div> 
+                              <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="Gluten-free" value="Gluten-free" name="toppings">
+                                <label class="custom-control-label" for="Gluten-free">Gluten-free</label>
+                              </div> 
+                              <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="Mushroom" value="Mushroom" name="toppings">
+                                <label class="custom-control-label" for="Mushroom">Mushroom</label>
+                              </div> 
+                              <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="Tomatoes" value="Tomatoes" name="toppings">
+                                <label class="custom-control-label" for="Tomatoes">Tomatoes</label>
+                              </div> 
+                              <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="Green-pepper" value="Green" name="toppings">
+                                <label class="custom-control-label" for="Green pepper">Green pepper</label>
+                              </div>
+                            
+                            
                             <button type="submit" class="btn" class="proceed" >Proceed</button>
                         </form>
 
@@ -192,7 +209,7 @@
 
                     <div class="col-sm-6" id="your-order">
                         <h3>Your order is:</h3>
-                        <table class="pizzatable">
+                        <table class="pizzatable" id="order">
                             <thead>
                                 <tr>
                                     <th>Name</th>
@@ -214,6 +231,10 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <p id="pizzatotal"></p>
+                        <p id="totalbill"></p> 
+                        <p id="totalprice">Delivery will cost sh. 150</p>
+                        <p id="finallmessage"></p>
                         <button class="btn" id="addpizza" >Add pizza</button>
                         <button class="btn" id="checkout">Checkout</button>
                         <button class="btn" id="homedelivery">Home delivery</button>
