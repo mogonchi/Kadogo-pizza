@@ -195,8 +195,9 @@ $(document).ready(function(){
        let checkOutTotal = 0;
        checkoutTotal = checkoutTotal + total;
 
-    //    let newOrder = new Orderpizza(pizzaName, pizzaSize, pizzaCrust, pizzaTopping, total);
-    //    console.log(newOrder);
-    //    $('#your-order').append('<tr><td id="pizzaname">' + newOrder.name + '</td>< id="pizzasize"> ' + newOrder.size + '</td>< id="pizzacrust"> ' + newOrder.crust + '</td>< id="pizzatopping"> ' + newOrder.topping + '</td>< id="totals"> ' + newOrder.total '</td></tr>' );
+       let newOrder = new Orderpizza(pizzaName, pizzaSize, pizzaCrust, pizzaTopping, total);
+    
+       $("#your-order").append('<tr><td id="pizzaname">' + newOrder.name + '</td><td id="pizzasize">' + newOrder.size + '</td><td id="pizzacrust">' + newOrder.crust + '</td><td id="pizzatopping">' + newOrder.topping + '</td><td id="totals">' + newOrder.total+ '</td></tr>')
+       console.log(newOrder);
 
 })
