@@ -13,12 +13,12 @@
 #nav-bar{
     
     text-align: right;
-    padding-left: 3rem;
-    margin-left: 3rem;
+    padding-left: 2rem;
+    margin-left: 2rem;
 }
 #nav-bar a{
     text-decoration: none;
-    margin-left: 3rem;
+    margin-left: 2rem;
   
 } 
 .nav a:hover{
@@ -31,6 +31,7 @@
     text-indent: 3rem;
     padding-top: 50px;
     margin-top: 50px;
+    color: black;
 }
 
 body{
@@ -38,14 +39,58 @@ body{
     background-attachment: fixed;
     background-position: center;
     content: '\F0C8F';
+    color: black;
 }
 /* About us */
 #about-us{
     text-align: center;
     padding-top: 20px;
     margin-top: 20px;
+    background-color: transparent;
+    color: black;
 }
 #images p{
    background-color: black;
    color: white;
+}
+.variety{
+    margin-top: 3rem;
+    text-align: center;
+    color: black;
+}
+.menu{
+    margin-top: 3rem;
+    text-align: center;
+    color: black;
+}
+/* order */
+
+.order{
+    text-align: center;
+}
+#order-here{
+    text-align: center;
+    /* margin: 20px;
+    padding: 15px; */
+}
+/* contact us */
+.contact-us{
+    text-align: center;
+    margin-top: 15px;
+    background-color: rgb(249, 252, 252);
+    opacity: initial;
+    margin: 50px;
+    padding: 50px;
+}
+.footer{
+    text-align: center;
+    margin-top: 20px;
+    background-color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+#totalprice, #your-order, .delivery{
+    display: none;
 }
