@@ -15,7 +15,7 @@ function Orderpizza(name, size, crust,topping, total) {
 
 $(document).ready(function(){
     $("button.proceed").click(function(event){
-        let pizzaName = $(".name option: selected").val();
+        let pizzaName = $("#flavor option: selected").val();
         let pizzaSize = $("#size option:selected").val();
         let pizzaCrust = $("#crust option: selected").val();
         let pizzaTopping = $("#topping option: selected"). val();
@@ -104,10 +104,13 @@ $(document).ready(function(){
        let checkoutTotal = 0;
        checkoutTotal = checkoutTotal + total;
 
-       $("#pizzaname").html($(".name option:selected").val());
+       $("#pizzaname").html($("#flavor option:selected").val());
        $("#pizzasize").html($("#size option:selected").val());
        $("#pizzacrust").html($("#crust option:selected").val());
        $("#pizzatopping").html($("#topping option:selected").val());
        $("#totals").html(total);
+
+       let newOrder = new Orderpizza(pizzaName, pizzaSize, pizzaCrust, pizzaTopping, total);
+       console.log(newOrder);
 
 })
