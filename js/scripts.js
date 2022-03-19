@@ -200,4 +200,13 @@ $(document).ready(function(){
        $("#your-order").append('<tr><td id="pizzaname">' + newOrder.name + '</td><td id="pizzasize">' + newOrder.size + '</td><td id="pizzacrust">' + newOrder.crust + '</td><td id="pizzatopping">' + newOrder.topping + '</td><td id="totals">' + newOrder.total+ '</td></tr>')
        console.log(newOrder);
 
+       $("button#checkout").click(function(){
+           $("buttun#checkout").hide();
+           $("button#addpizza").hide();
+           $("button#homedelivery").slideDown(2000);
+           $("#totalprice").slideDown(2000);
+           alert("Your bills amount to sh. " + checkOutTotal);
+           $("#pizzatotal").append("Your bill is sh. " +checkOutTotal)
+       })
+
 })
