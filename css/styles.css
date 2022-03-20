@@ -76,7 +76,7 @@ body{
     padding: 15px; */
 }
 /* contact us */
-.contact-us{
+#contact-us{
     text-align: center;
     margin-top: 15px;
     background-color: rgb(249, 252, 252);
@@ -93,6 +93,7 @@ body{
     padding-right: 50px;
     padding-left: 50px;
 }
-/* #totalprice, #your-order, .delivery{
-    display: none;
-} */
+.btn{
+    background-color: blue;
+    border-radius: 50%;
+}

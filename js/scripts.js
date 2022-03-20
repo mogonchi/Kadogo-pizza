@@ -98,11 +98,11 @@ $(document).ready(function () {
         };
 
         $(function () {
-            if (size == large) {
+            if (pizzaSize == large) {
                 console.log("price is sh." + 2000);
-            } else if (size == medium) {
+            } else if (pizzaSize == medium) {
                 console.log("price is sh. " + 1500);
-            } else if (size == small) {
+            } else if (pizzaSize == small) {
                 console.log("price is sh. " + 600);
             }
 
@@ -110,16 +110,18 @@ $(document).ready(function () {
 
         });
         $(function () {
-                if (crust == cripsy) {
+                if (pizzaCrust == cripsy) {
                     console.log("price is sh." + 150);
-                } else if (crust == stuffed) {
+                } else if (pizzaCrustcrust == stuffed) {
                     console.log("price is sh. " + 180);
-                } else if (crust == Gluten - free) {
+                } else if (pizzaCrust == Gluten - free) {
                     console.log("price is sh. " + 200);
                 }
 
             }),
-
+        
+            
+        
         
     $("form#form-group").submit(function (event) {
         event.preventDefault();
