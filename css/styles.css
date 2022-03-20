@@ -1,0 +1,120 @@
+
+/* styling class container-nav */
+.profile{
+    color: rgb(82, 68, 8);
+    
+}
+.container-nav{
+    background-color: black;
+    height: 80px;
+    
+}
+
+#nav-bar{
+    
+    text-align: right;
+    padding-left: 2rem;
+    margin-left: 2rem;
+}
+#nav-bar a{
+    text-decoration: none;
+    margin-left: 2rem;
+  
+} 
+.nav a:hover{
+    background-color: green;
+    border-radius: 4px;
+
+}
+#welcome{
+    text-align: center;
+    text-indent: 3rem;
+    padding-top: 50px;
+    margin-top: 50px;
+    color: black;
+}
+
+body{
+    background-image: url(../images/backgrnd.jpg);
+    background-repeat: no repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    content: '\F0C8F';
+    color: black;
+}
+/* About us */
+#about-us{
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    background-color: transparent;
+    color: rgb(233, 229, 229);
+}
+#images p{
+   background-color: black;
+   color: white;
+}
+.variety{
+    margin-top: 3rem;
+    text-align: center;
+    color: black;
+}
+.menu{
+    margin-top: 3rem;
+    text-align: center;
+    color: black;
+}
+/* order */
+
+.order{
+    text-align: center;
+}
+#order-here{
+    text-align: center;
+    /* margin: 20px;
+    padding: 15px; */
+}
+/* contact us */
+#contact-us{
+    text-align: center;
+    margin-top: 15px;
+    background-color: rgb(249, 252, 252);
+    opacity: initial;
+    margin: 50px;
+    padding: 50px;
+}
+.footer{
+    text-align: center;
+    margin-top: 20px;
+    background-color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.btn{
+    background-color: rgb(76, 168, 47);
+    border-radius: 20%;
+}
+
+#form-group, #your-order, #order-here{
+    background-color: grey;
+}
+.delivery{
+    display: none;
+}
+@media screen and (min-width: 480px) and (max-width: 770px) {
+
+    #nav-bar{
+        color: green;
+        align-items: center;
+        
+        margin: 0;
+    }
+    body{
+        margin: o;
+        align-items: center;
+    }
+
+}
