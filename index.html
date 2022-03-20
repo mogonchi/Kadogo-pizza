@@ -230,7 +230,8 @@
                               </div>
                             
                            
-                            <button type="submit" class="btn" class="proceed" onclick="response()">Proceed</button>
+                            <button type="submit" class="btn" id="proceed" >Proceed</button>
+                            <!-- onclick="response()" -->
                         </form>
 
                     </div>
@@ -262,19 +263,16 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <p id="pizzatotal"></p>
-                        <p id="totalbill"></p> 
-                        <p id="totalprice"></p>
-                        <p id="finallmessage"></p>
+                        
                        
-                        <button class="btn" id="checkout" onclick="response">Checkout</button>
-                        <button class="btn" id="homedelivery" onclick="alert('Your bill is ' + totalPrice+ '  ' + 'plus the delivery fee of sh.150')">Home delivery</button>
-                        <button></button>
+                        <button class="btn" id="checkout">Checkout</button>
+                        <button class="btn" id="homedelivery" >Home delivery</button>
+                        <!-- onclick="alert('Your bill is '+grandTotal + ' plus the delivery fee of sh.150')" -->
                     </div>
                     <!-- id form-group -->
                     <div class="delivery">
                         <form action="" onsubmit="locationvalidate" id="form-group">
-                            <div class="form-group" >
+                            <div class="form-group">
                                 <input type="text" id="name" class="form-control" placeholder="Name">
                                 <input type="number" id="phone" class="form-control" placeholder="Phone number">
                                 <input type="text" id="location" class="form-control" placeholder="Location for dlivery">

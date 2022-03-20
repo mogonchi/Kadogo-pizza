@@ -49,7 +49,7 @@ body{
     padding-top: 20px;
     margin-top: 20px;
     background-color: transparent;
-    color: black;
+    color: rgb(233, 229, 229);
 }
 #images p{
    background-color: black;
@@ -94,10 +94,27 @@ body{
     padding-left: 50px;
 }
 .btn{
-    background-color: rgb(18, 54, 7);
-    border-radius: 40%;
+    background-color: rgb(76, 168, 47);
+    border-radius: 20%;
 }
 
 #form-group, #your-order, #order-here{
     background-color: grey;
+}
+.delivery{
+    display: none;
+}
+@media screen and (min-width: 480px) and (max-width: 770px) {
+
+    #nav-bar{
+        color: green;
+        align-items: center;
+        
+        margin: 0;
+    }
+    body{
+        margin: o;
+        align-items: center;
+    }
+
 }
