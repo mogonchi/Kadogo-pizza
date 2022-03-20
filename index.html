@@ -174,9 +174,16 @@
                                 <option value="Stuffed">Stuffed -- sh.180</option>
                                 <option value="Gluten-free">Gluten-free -- sh.200</option>
                             </select>
+                            <label for="number">Choose your number.</label>
+                            <div class="form-group">
+                                <label for="number of pizza"></label>
+                                <input type="number" id="number">
+                            </div>
+
+
                             <label for="toppings">Select your favorite toppings at sh.80 each</label>
                             
-                            <div class="custom-control custom-checkbox custom-control-inline">
+                            <div class="custom-control custom-checkbox custom-control-inline" id="topping">
                                 <input type="checkbox" class="custom-control-input" id="Garlic" value="Garlic" name="toppings">
                                 <label class="custom-control-label" for="Garlic">Fresh garlic</label>
                               </div> 
@@ -201,8 +208,8 @@
                                 <label class="custom-control-label" for="Green pepper">Green pepper</label>
                               </div>
                             
-                            
-                            <button type="submit" class="btn" class="proceed" >Proceed</button>
+                           
+                            <button type="submit" class="btn" class="proceed" onclick="response()">Proceed</button>
                         </form>
 
                     </div>
@@ -212,19 +219,21 @@
                         <table class="pizzatable" id="order">
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Size</th>
-                                    <th>Crust</th>
-                                    <th>Topping</th>
-                                    <th>Total</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Size</th>
+                                    <th scope="col">Crust</th>
+                                    <th scope="col">Topping</th>
+                                    <th scope="col">Number</th>
+                                    <th scope="col">Total</th>
                                 
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="made-orders">
                                 <tr>
                                     <td id="pizzaname"></td>
                                     <td id="pizzasize"></td>
                                     <td id="pizzacrust"></td>
+                                    <td id="pizzanumber"></td>
                                     <td id="pizzatopping"></td>
                                     <td id="totals"></td>
     
@@ -235,13 +244,13 @@
                         <p id="totalbill"></p> 
                         <p id="totalprice">Delivery will cost sh. 150</p>
                         <p id="finallmessage"></p>
-                        <button class="btn" id="addpizza" >Add pizza</button>
-                        <button class="btn" id="checkout">Checkout</button>
-                        <button class="btn" id="homedelivery">Home delivery</button>
+                        <button class="btn" id="addpizza" onclick="response()">Add pizza</button>
+                        <button class="btn" id="checkout" onclick="response">Checkout</button>
+                        <button class="btn" id="homedelivery" onclick="response()">Home delivery</button>
                         <button></button>
                     </div>
                     <div class="delivery">
-                        <form action="">
+                        <form action="" onsubmit="locationvalidate" id="form-group">
                             <div class="form-group">
                                 <input type="text" id="name" class="form-control" placeholder="Name">
                                 <input type="number" id="phone" class="form-control" placeholder="Phone number">
