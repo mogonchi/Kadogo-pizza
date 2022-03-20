@@ -21,9 +21,14 @@
 <p>Bootstrap<p>
 
 ### Known bugs
+<p>No known bugs<p>
 
 ### BDD
+<p>The user selects the type of flavor, crust and toppings of their best and clicks proceed.<p>
+<p>After clickin proceed, the user checkout and is directed to a form to enter his/her/their details.<p>
+<p>The user receives an alert messaging informing them about their delivery and proceeds to click home delivery and is alerted message on their total bill.<p>
 
+ 
 ### Live link
 <p>https://mogonchi.github.io/Kadogo-pizza/<p>
 
