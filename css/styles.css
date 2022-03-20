@@ -94,6 +94,10 @@ body{
     padding-left: 50px;
 }
 .btn{
-    background-color: blue;
-    border-radius: 50%;
+    background-color: rgb(18, 54, 7);
+    border-radius: 40%;
+}
+
+#form-group, #your-order, #order-here{
+    background-color: grey;
 }
