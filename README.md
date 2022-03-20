@@ -29,4 +29,4 @@
 
 ### Copyright and License
 <p>Under MIT license. For more license and copyright information, see license information.<p>
-<p>[MIT License]<p>
+<p>[]MIT License<p>
