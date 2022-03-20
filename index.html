@@ -24,11 +24,11 @@
             <div class="col-md-6">
                 
                 <nav id="nav-bar" class="nav">
-                    <a href="#">Home</a>
-                    <a href="#">About us</a>
-                    <a href="#">Our varieties</a>
-                    <a href="#">Order</a>
-                    <a href="#">Contact us</a>
+                    <a href="#welcome">Home</a>
+                    <a href="#about-us">About us</a>
+                    <a href="#menu">Our varieties</a>
+                    <a href="#order-here">Order</a>
+                    <a href="#contact-us">Contact us</a>
 
                 </nav>
             </div>
@@ -45,6 +45,12 @@
             </div>
         </div>
     </div>
+
+    <!-- About us  -->
+    <!-- contains  id about us and id menu -->
+
+
+    <!-- Start of about us-our varieties -->
     <div class="container-about">
         <div class="row">
             <div class="col-md-6" id="about-us">
@@ -52,6 +58,8 @@
                 <p>Kadogo pizza is a restaurant at Kisii town majoring on pizza services only for both home delvery and in-place services. </p>
                 <p>Since most of the people prefer pizza as their best meal, we offer a unique atmosphere to our customers despite their living classes by providing different sizes of pizza with different crusts and toppings of their choice.</p>
             </div>
+
+            <!-- start of id menu -->
 
             <div class="col-md-6" id="menu">
                 <h2 class="variety">Our varieties</h2>
@@ -112,6 +120,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Contains menu  -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6">
@@ -147,12 +157,17 @@
                 
                 
             </div>
+
+
+            <!-- Id  order-here -->
             <div class="col-md-6" id="order-here">
                 <h2 class="order">Order</h2>
                 <p>Order your pizza here and we will deliver it into your doorstep</p>
                 <div class="row">
                     <div class="col-md-5">
                         <form action="" id="form">
+
+                            <!-- Flavours -->
                             <label for="select">Select your flavor</label>
                             <select name="" id="flavor">
                                 <option value="Veggi pizza">Veggi pizza</option>
@@ -162,18 +177,23 @@
                                 <option value="Supreme pizza">Supreme pizza</option>
                                 <option value="Cheese pizza">Cheese pizza</option>
                             </select>
+
+                            <!-- Pizza size -->
                             <label for="size">Select your best size.</label> <br>
                             <select name="" id="size">
                                 <option value="large">Large -- sh.2000</option>
                                 <option value="medium">Medium -- sh.1500</option>
                                 <option value="small">Small -- sh.600</option>
                             </select>
+
+                            <!-- pizza crust -->
                             <label for="crust">Select your preferred crust</label>
                             <select name="" id="crust">
                                 <option value="Crispy">Crispy - sh.150</option>
                                 <option value="Stuffed">Stuffed -- sh.180</option>
                                 <option value="Gluten-free">Gluten-free -- sh.200</option>
                             </select>
+                            <!-- number selection -->
                             <label for="number">Choose your number.</label>
                             <div class="form-group">
                                 <label for="number of pizza"></label>
@@ -181,6 +201,7 @@
                             </div>
 
 
+                            <!-- Toppings -->
                             <label for="toppings">Select your favorite toppings at sh.80 each</label>
                             
                             <div class="custom-control custom-checkbox custom-control-inline" id="topping">
@@ -214,6 +235,7 @@
 
                     </div>
 
+                    <!-- id your-order -->
                     <div class="col-sm-6" id="your-order">
                         <h3>Your order is:</h3>
                         <table class="pizzatable" id="order">
@@ -244,11 +266,12 @@
                         <p id="totalbill"></p> 
                         <p id="totalprice">Delivery will cost sh. 150</p>
                         <p id="finallmessage"></p>
-                        <button class="btn" id="addpizza" onclick="response()">Add pizza</button>
+                       
                         <button class="btn" id="checkout" onclick="response">Checkout</button>
-                        <button class="btn" id="homedelivery" onclick="response()">Home delivery</button>
+                        <button class="btn" id="homedelivery" onclick="">Home delivery</button>
                         <button></button>
                     </div>
+                    <!-- id form-group -->
                     <div class="delivery">
                         <form action="" onsubmit="locationvalidate" id="form-group">
                             <div class="form-group">
@@ -265,10 +288,11 @@
 
         </div>
     </div>
+    <!-- class contact us -->
     <div class="container-contact">
         <div class="row">
             <div class="col-md-12">
-                <div class="contact-us">
+                <div id="contact-us">
                     <h2>Contact us</h2>
                     <p>Dear esteemed customer you can reach us through;</p>
                     <div class="row">
@@ -291,6 +315,7 @@
                 </div>
             </div>
         </div>
+        <!--footer -->
         <div class="footer">
             <p>&copy; 2022 | Kadogo's Pizza</p>
         </div>
