@@ -5,8 +5,7 @@ function Orderpizza(name, size, crust, topping) {
     this.size = size;
     this.crust = crust;
     this.topping = topping;
-    // this.number = number;
-    // this.totals = total;
+    
 };
 
 let price = function (pizzaSize, pizzaCrust, pizzaTopping) {
@@ -135,82 +134,3 @@ $(document).ready(function () {
 
 
 
-// // user interface logic
-
-
-// $(document).ready(function () {
-
-
-//     $('#final-order').click(function () {
-//         locationvalidate();
-//     });
-
-
-
-
-//   
-//     $("form#form").submit(function (event) {
-
-//         event.preventDefault();
-
-//         
-
-//         function locationvalidate() {
-//             let name = document.getElementById("name").val();
-//             let phone = document.getElementById("phone").val();
-//             let location = document.getElementById("location").val();
-//             if (name == " " && phone == " " && location == " ") {
-//                 alert("Please enter your details");
-//                 return false;
-//             } else {
-//                 return true
-//             }
-//         };
-
-//         
-
-
-
-
-//     $("form#form-group").submit(function (event) {
-//         event.preventDefault();
-//         let personName = $("#form-group #name").val();
-//         let personPhone = $("#form-group #phone").val();
-//         let personLocation = $("#form-group #location").val();
-//         alert('Hello  ' + personName + "  your order will be delivered between 24 hours to  " + personLocation + "." + "You will be charged delivery fee of sh.150." + "Your phone numeber is " + personPhone)
-
-//     });
-
-
-// });
-
-// function response() {
-//     alert('Your order will be delivered to Your selected location')
-//     // alert("click the checkout button to check youor total cost")
-// }
-// })
-
-
-
-
-//let pizzaName = $("select#flavor").val();
-//         let pizzaSize = $('select#size').val();
-//         let pizzaCrust = $('select#crust').val();
-//         let pizzaTopping = topping;
-//         let pizzaNumber = $('input#number').val();
-//         let toppingsPrice = topping.length * 80;
-//         let sizePrice = $('#size').find('option:selected').attr('price');
-//         let crustPrice = $('#crust').find('option:selected').attr('price');
-
-
-
-//         let inputtedTotal = $('select#totals').val();
-//         let newOrder = new Orderpizza(
-//             pizzaName, pizzaSize, pizzaCrust, pizzaNumber, pizzaTopping, inputtedTotal
-
-//         );
-//         let totalPrice = Number(sizePrice) + Number(crustPrice) + Number(toppingsPrice)
-//         totalprice = totalPrice
-
-//         console.log(newOrder);
-//         $('tbody#made-orders').append("<tr>" + '<d>' + newOrder.pizzaname + '</d>' + '<td>' + newOrder.pizzasize + '</td>' + +'<td>' + newOrder.pizzacrust + '</td>' + '<td>' + newOrder.pizzanumber + '</td>' + '<td>' + newOrder.pizzatopping + '</td>' + '<td>' + totalPrice + '</td>' + +"</tr>");
